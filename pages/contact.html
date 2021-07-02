@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+
+    <title>West Portfolio</title>
+  </head>
+  <body class="bg-2">
+    <nav class="fs-5 navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="fs-4 navbar-brand" href="../index.html">KESH WEST</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/keshwest">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </li>
+              </ul>   
+            </div>
+          </div>
+    </nav>
+
+        <div id="form-bg" class="container">
+          <div class="row">
+            <div class="col mx-auto">
+              <div>
+                <p class="text-center byline"> Contact Me!</p>
+                <p class="lead text-center">I'm waiting to hear from you!</p>
+                 <div class="d-flex justify-content-center"><img src="../images/avataaars_2.png" class="w-75" id="contact-img"></div>
+              </div>
+            </div>
+            
+            <div class="col-md-8">
+              <form class="contact-form" action="https://formspree.io/f/mzbyvbyv" method="post">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="name"></label>
+                  <div class="col-sm-10 mx-auto">          
+                  <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email"></label>
+                  <div class="col-sm-10 mx-auto">
+                  <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="subject"></label>
+                  <div class="col-sm-10 mx-auto">          
+                  <input type="text" class="form-control" id="subject" placeholder="Enter Subject" name="subject">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="message"></label>
+                  <div class="col-sm-10 mx-auto">
+                  <textarea class="form-control" rows="5" id="message" placeholder="Enter Message" name="message"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">        
+                  <div class="col-sm-offset-2 col-sm-10 mx-auto">
+                  <button id="submit-btn" type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sendModal">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+<div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="sendModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Message Sent!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="w-100" src="../images/mail.gif">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="../js/bootstrap.js"> </script>
+        
+  </body>
+</html>

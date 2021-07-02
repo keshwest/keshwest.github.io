@@ -1,0 +1,202 @@
+body{
+    background-color: whitesmoke; 
+}
+
+/* text scramble */
+.text {
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 70px;
+    color: #3b3b3b;
+    padding: 0px 50px 0px 50px;
+  }
+  .dud {
+    color: #757575;
+  }
+  
+.bio-link {
+    text-decoration: none;
+    color: white;
+    background-color: #0d6efd;
+    padding: 0px 3px 3px 3px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.bio-link:hover {
+    color: white;
+    background-color: #0b5eda;
+}
+
+#form-bg {
+    background-color: rgb(219, 219, 219);
+    border: rgb(201, 201, 201) solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+#submit-btn {
+    margin: 30px 0px 10px 0px;
+}
+
+#static{
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    padding: 10px 10px 150px 10px;
+    transition-delay: 0.1s;
+    
+}
+ 
+  #static:hover {
+    content: url(../images/avataaars.png);
+    
+  }
+
+  #contact-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px
+    ;
+    padding: 0px 10px 10px 10px;
+} 
+
+.snap-container {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  overflow-y: scroll;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  will-change: scroll-snap-type;
+}
+.snap-section {
+ /*  position: sticky;
+  top: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: wrap;
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  opacity: 1;
+}
+
+
+.bg-1{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #c3cdd8 74%);
+    
+}
+
+.bg-2{
+    background-image: url("../images/pattern-2.png");
+    background-color: #ffffff;
+}
+
+.pad-flex{
+    padding: 100px 100px 0px 100px;
+}
+
+.bio-txt{
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 0px 220px 0 220px;
+}
+
+.byline{
+    font-size: 50px;
+    font-family: 'Teko', sans-serif; 
+}
+
+.b1{
+    margin-top: 100px;
+}
+
+#greet-txt{
+    padding: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    .text{  
+        font-size: 40px;
+    }
+    .bio-txt{
+        padding: 0 50px 0 50px;
+        font-size: 1.2rem;
+        
+        
+    }
+    .bio-link{
+        padding: 0px 2px 2px 2px;
+    }
+    #greet-txt{
+        margin-top: 50px;
+        padding: 0px 50px 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .text{  
+        font-size: 25px;
+    }
+    .bio-link{
+        padding: 0px 2px 2px 2px;
+    }
+    .pad-flex{
+        padding: 20px;
+    }
+    .bio-txt{
+        padding: 0 20px 0 20px;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.5 !important; 
+    }
+    #job-byline{
+        margin-top: 40px;
+    }
+
+    #static{
+        padding: 10px 10px 0px 10px;
+        width: 240px;
+    }
+    #greet-txt{
+        font-size: 1.75rem;
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .bio-txt{
+        padding: 0px 10px 0 10px;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.2 !important; 
+    }
+    #greet-txt{
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+    .text{  
+        font-size: 19px;
+        padding: 0px 20px 0px 20px;
+    }
+    .bio-link{
+        padding: 0px 1px 1px 1px;
+    }
+}
+
+
+
+
+
+  
+ 
+
+  
+  
+
+
